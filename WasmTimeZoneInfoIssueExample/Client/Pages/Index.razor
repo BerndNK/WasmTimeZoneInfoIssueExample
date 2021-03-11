@@ -1,0 +1,9 @@
+﻿@page "/"
+
+@*this throws an runtime exception:*@
+<h1>@(TimeZoneInfo.FromSerializedString(TimeZoneInfo.Local.ToSerializedString()))</h1>
+
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
